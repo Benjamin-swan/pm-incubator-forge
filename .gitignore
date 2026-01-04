@@ -1,43 +1,7 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,nextjs,pycharm,pycharm+all,pycharm+iml,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,nextjs,pycharm,pycharm+all,pycharm+iml,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/python,intellij,intellij+all,intellij+iml,visualstudiocode,react,nextjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,intellij,intellij+all,intellij+iml,visualstudiocode,react,nextjs
 
-### NextJS ###
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-### PyCharm ###
+### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -116,7 +80,7 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### PyCharm Patch ###
+### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
 # *.iml
@@ -150,7 +114,7 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
 .idea/**/azureSettings.xml
 
-### PyCharm+all ###
+### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -199,7 +163,7 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 
-### PyCharm+all Patch ###
+### Intellij+all Patch ###
 # Ignore everything but code style settings and run configurations
 # that are supposed to be shared within teams.
 
@@ -208,7 +172,7 @@ fabric.properties
 !.idea/codeStyles
 !.idea/runConfigurations
 
-### PyCharm+iml ###
+### Intellij+iml ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -257,13 +221,49 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 
-### PyCharm+iml Patch ###
+### Intellij+iml Patch ###
 # Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
 
 *.iml
 modules.xml
 .idea/misc.xml
 *.ipr
+
+### NextJS ###
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -437,6 +437,21 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
+### react ###
+.DS_*
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -456,10 +471,13 @@ pyrightconfig.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/python,nextjs,pycharm,pycharm+all,pycharm+iml,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/python,intellij,intellij+all,intellij+iml,visualstudiocode,react,nextjs
 
-# exclude .env
-.env
+# exclude .DS_Store
+.DS_Store
 
 # exclude .idea
 .idea
+
+# exclude .env
+.env

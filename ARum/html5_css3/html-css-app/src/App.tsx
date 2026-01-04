@@ -1,0 +1,48 @@
+import './App.css'
+import { FirstProblem } from './problem/FirstProblem'
+import { ControlFlowIf } from './control_flow/ControlFlowIf'
+import { VariableAndDataTypes } from './data_type/VariableAndDataTypes'
+import { LogicalOperationExample } from './logical_operation/LogicalOperationExample.tsx'
+import { CalculationExample } from './math_operation/CalculationExample'
+import { ControlFlowSwitch } from './control_flow/ControlFlowSwitch.tsx'
+import { ControlFlowFor } from './control_flow/ControlFlowFor.tsx'
+import { ControlFlowForSummation } from './control_flow/ControlFlowForSummation.tsx'
+import { ControlFlowForSummationExample } from './control_flow/ControlFlowForSummationExample.tsx'
+import { SecondProblem } from './problem/SecondProblem.tsx'
+import { MapExample } from './map/MapExample.tsx'
+import { MapReduceExample } from './map/MapReduceExample.tsx'
+import { MapFilterExample } from './map/MapFilterExample.tsx'
+import { ArraySliceExample } from './array/ArraySliceExample.tsx'
+import { ArraySpliceExample } from './array/ArraySpliceExample copy.tsx'
+
+function App() {
+
+  return (
+    <>
+      <div>
+        {/* 여러분들만의 커스텀 태그 생성 */}
+        {/* 이 커스텀 태그는 단순히 사칙연산 + 나머지(MOD) 연산 */}
+        {/* 이와 같은 형태로 직접 커스텀 태그를 만들면 
+            지저분해지는 상황을 방지할 수 있습니다. */}
+        {/* 관심사의 분리를 달성할 수 있음 */}
+        <CalculationExample/>
+        <VariableAndDataTypes/>
+        <LogicalOperationExample/>
+        <ControlFlowIf/>
+        <FirstProblem/>
+        <ControlFlowSwitch/>
+        <ControlFlowFor/>
+        <ControlFlowForSummation/>
+        <ControlFlowForSummationExample/>
+        <SecondProblem/>
+        <MapExample/>
+        <MapReduceExample/>
+        <MapFilterExample/>
+        <ArraySliceExample/>
+        <ArraySpliceExample/>
+      </div>
+    </>
+  )
+}
+
+export default App
