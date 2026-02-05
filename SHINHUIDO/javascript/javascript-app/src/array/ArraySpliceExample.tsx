@@ -1,5 +1,5 @@
 export const ArraySpliceExample = () => {
-   let number_array: number[] = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+   let number_array: number[] = [ 4, 6, 8, 10, 12, 14, 16, 18, 20]
    let spliced_array: number[] = [...number_array]
 
    spliced_array.splice(3, 1, 777)
